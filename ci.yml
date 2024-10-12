@@ -78,7 +78,7 @@ run: |
 npm version ${{ env.new_version }} --no-git-tag-version
 - name: Commit e push
 env:
-GH_TOKEN: ${{ secrets.TOKEN_GIT }}
+GH_TOKEN: ${{ secrets.GH_TOKEN }}
 run: |
 git config --global user.name 'github-actions'
 git config --global user.email 'github-actions@github.com'
